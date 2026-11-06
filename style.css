@@ -192,9 +192,9 @@ table {
     body {
         font-family: var(--font-body);
         font-size: var(--font-size-base);
-        line-height: 1.6;
-        color: var(--color-text-dark);
-        background-color: var(--color-bg-cream);
+        line-height: var(--line-height-body);
+        color: var(--color-text-dark, #333333);
+        background-color: var(--color-bg-cream, #e3dccb);
     }
 
     h1, h2, h3, h4, h5, h6 {
