@@ -204,7 +204,7 @@ table {
     }
 
     p {
-        max-width: 65ch; 
+        max-width: var(--max-line-length); 
         margin-bottom: 1rem;
     }
 
