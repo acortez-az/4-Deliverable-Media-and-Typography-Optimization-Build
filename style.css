@@ -199,8 +199,9 @@ table {
 
     h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-heading);
-        line-height: 1.2;
+        line-height: var(--line-height-heading);
         color: var(--color-text-dark);
+        margin-bottom: 0.75rem;
     }
 
     p {
