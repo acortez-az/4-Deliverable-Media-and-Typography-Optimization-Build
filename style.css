@@ -24,6 +24,10 @@
         --font-size-lg: 1.2rem;
         --font-size-xl: 1.6rem;
 
+        --line-height-body: 1.6;
+        --line-height-heading: 1.2;
+        --max-line-length: 65ch;
+
         --spacing-sm: 10px;
         --spacing-md: 20px;
         --spacing-lg: 40px;
