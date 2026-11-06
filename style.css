@@ -189,7 +189,18 @@ table {
         color: var(--color-text-dark);
         background-color: var(--color-bg-cream);
     }
-    
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-heading);
+        line-height: 1.2;
+        color: var(--color-text-dark);
+    }
+
+    p {
+        max-width: 65ch; 
+        margin-bottom: 1rem;
+    }
+
     .card-body {
         padding: 15px 20px;
         flex-grow: 1;
