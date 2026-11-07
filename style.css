@@ -206,8 +206,11 @@ table {
     }
 
     .green-nav {
+        background-image: url('asset inventory/grass.jpg');
+        background-repeat: repeat;
         background-color: #2e8b57;
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         padding: 20px 10px;
@@ -216,6 +219,7 @@ table {
     }
 
     .nav-item {
+        background-image: url('asset inventory/board_icon.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -225,7 +229,7 @@ table {
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        color: var(--color-text-light, #ffffff);
+        color: #ffffff;
         font-weight: bold;
         filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
         transition: transform 0.2s ease;
@@ -235,6 +239,15 @@ table {
         height: 12px;
         background: linear-gradient(to bottom, #16a34a, #15803d);
         box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-items-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
     }
 
     .main-content {
@@ -635,6 +648,11 @@ table {
     .modal-overlay:target {
         display: flex;
     }
+
+    .nav-toggle, 
+    .hamburger-btn {
+    display: none;
+    }
 }
 
 /* OVER RIDES */
@@ -651,6 +669,52 @@ table {
         .feature-card {
             display: block;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .green-nav {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px 20px;
+    }
+
+    .hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35px;
+        height: 26px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    .hamburger-btn span {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-items-container {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .nav-toggle:checked ~ .nav-items-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .green-nav .nav-item {
+        width: 100%;
+        height: 70px;
+        background-size: cover;
     }
 }
 
