@@ -164,6 +164,7 @@ table {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-color: #e8b0f7;
         padding: 60px 20px;
         display: flex;
         justify-content: center;
@@ -171,6 +172,7 @@ table {
     }
 
     .banner-image-box {
+        background-color: transparent;
         width: 100%;
         max-width: 700px;
         display: flex;
@@ -186,6 +188,14 @@ table {
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         display: block;
+    }
+
+    .banner-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
     }
 
     .overlapping-logo {
@@ -241,6 +251,16 @@ table {
         box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
     }
 
+    .nav-item:hover {
+        transform: scale(1.08) translateY(-2px);
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+    }
+
+    .nav-toggle, 
+    .hamburger-btn {
+        display: none;
+    }
+
     .nav-items-container {
         display: flex;
         flex-direction: row;
@@ -258,6 +278,21 @@ table {
         background-color: var(--color-bg-main);
         text-align: center;
         padding: 40px 20px 60px 20px;
+    }
+
+    .main-content h2 {
+        background-image: url('Asset inventory/board_icon.png');
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding: 15px 50px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 1.6rem;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
     }
 
     .wooden-title-banner {
@@ -327,10 +362,18 @@ table {
     }
 
     .video-box {
+        background-color: #cbd5e1;
         width: 100%;
-        height: 100%;
+        max-width: 550px;
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #111;
         border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
 
     .features-section {
@@ -489,12 +532,6 @@ table {
         gap: 10px;
     }
 
-    .video-backdrop-box {
-        aspect-ratio: 16 / 9;
-        width: 100%;
-        max-width: 650px;
-    }
-
     .banner-image-box img {
         width: 100%;
         height: auto;
@@ -647,11 +684,6 @@ table {
 
     .modal-overlay:target {
         display: flex;
-    }
-
-    .nav-toggle, 
-    .hamburger-btn {
-    display: none;
     }
 }
 
