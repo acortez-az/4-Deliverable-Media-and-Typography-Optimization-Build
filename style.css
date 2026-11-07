@@ -307,17 +307,18 @@
         max-width: 650px;
     }
 
+    .responsive-video-wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
     .video-box {
         background-color: #cbd5e1;
         width: 100%;
-        max-width: 550px;
-        height: 280px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.4rem;
-        font-weight: bold;
-        color: #111;
+        height: 100%;
+        max-width: 100%;
+        display: block;
         border-radius: var(--radius-md);
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
